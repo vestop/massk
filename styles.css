@@ -723,7 +723,7 @@ figure {
   text-align: left;
   background: white;
   border: 1px solid #dddddd;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s linear;
 }
 .DropdownMenu::before {
   content: '';

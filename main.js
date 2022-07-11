@@ -20,7 +20,7 @@ $('.story-slideshow').slick({
   ],
 });
 
-$('.slider-wrapper').slick({
+$('.product-list').slick({
   dots: false,
   infinite: false,
   autoplay: true,
