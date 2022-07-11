@@ -1173,7 +1173,7 @@ figure {
   font-weight: 600;
   font-family: 'Montserrat';
   position: absolute;
-  top: 80%;
+  bottom: 22%;
   left: 50%;
 
   margin-top: -185px;
@@ -1189,7 +1189,6 @@ figure {
   }
 
   .loadtxt {
-    top: 75%;
     font-size: 25px;
   }
 }
