@@ -20,7 +20,7 @@ $('.story-slideshow').slick({
   ],
 });
 
-$('.product-list').slick({
+$('.slider-wrapper').slick({
   dots: false,
   infinite: false,
   autoplay: true,
@@ -59,7 +59,7 @@ $('#menu').click(function () {
   $('#DropdownMenu').toggleClass('show');
 });
 
-$('.Header__Icon').click(function () {
+$('.header-menu').click(function () {
   $('.sidebar-menu').addClass('show'), $('.PageOverlay').addClass('is-visible');
 });
 $('.Drawer__Close').click(function () {

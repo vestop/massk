@@ -1111,6 +1111,16 @@ body:not(.is-tabbing) textarea:focus {
   padding: 0 24px;
 }
 
+@media screen and (min-width: 641px) {
+  .Container {
+    padding: 0 50px;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .Container {
+    padding: 0 80px;
+  }
+}
 .Container--narrow {
   max-width: 1420px;
 }
@@ -1128,16 +1138,6 @@ body:not(.is-tabbing) textarea:focus {
   flex-direction: row;
 }
 
-@media screen and (min-width: 641px) {
-  .Container {
-    padding: 0 50px;
-  }
-}
-@media screen and (min-width: 1240px) {
-  .Container {
-    padding: 0 80px;
-  }
-}
 /**
  * Very general typographic rules that are applied site wide
  */
