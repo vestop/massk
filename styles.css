@@ -93,6 +93,10 @@ body {
   max-height: 90px;
 }
 
+.ic2 {
+  width: 20px;
+}
+
 .HorizontalList__Item {
   color: #44444a;
   letter-spacing: 0.5px;
@@ -327,6 +331,14 @@ body {
     padding: 20px;
     display: inherit;
     text-align: center;
+  }
+
+  .logo {
+    max-height: 70px;
+  }
+
+  .top-header {
+    height: 80px;
   }
 }
 
@@ -717,8 +729,10 @@ figure {
 .DropdownMenu {
   position: absolute;
   visibility: hidden;
+  width: max-content;
   opacity: 0;
   top: 100%;
+  left: -45px;
   padding: 5px 0;
   text-align: left;
   background: white;
@@ -759,7 +773,7 @@ figure {
   width: 100%;
   text-align: inherit;
   padding: 6px 20px 6px 15px;
-  text-transform: none;
+  text-transform: uppercase;
 }
 
 .DropdownMenu .Link:hover {
@@ -1168,7 +1182,7 @@ figure {
 .loadtxt {
   width: 300px;
   text-align: center;
-  color: rgb(201, 0, 0);
+  color: #e31e24;
   font-size: 35px;
   font-weight: 600;
   font-family: 'Montserrat';
@@ -1185,7 +1199,7 @@ figure {
     width: 110px;
     height: 120px;
     margin-left: -70px;
-    margin-top: -60px;
+    margin-top: -80px;
   }
 
   .loadtxt {
@@ -1235,7 +1249,7 @@ figure {
   }
 
   .HorizontalList__Item:nth-child(2),
-  .HorizontalList__Item:nth-child(3) {
+  .HorizontalList__Item:nth-child(1) {
     display: none;
   }
 }
@@ -1330,7 +1344,9 @@ figure {
 }
 
 .sidebar-list {
+  width: 90%;
   margin-top: 50px;
+  text-align: center;
 }
 .sidebar-item {
   display: block;
