@@ -113,7 +113,7 @@ body {
   position: relative;
   display: block;
   overflow: hidden;
-  height: 70vh;
+  height: 45vh;
 }
 
 .slide-ratio::before {
@@ -1164,6 +1164,33 @@ figure {
   background-size: cover;
   /* animation: rotateplane 1s infinite ease-in-out; */
 }
+.loadtxt {
+  color: rgba(187, 0, 0, 0.925);
+  font-size: 35px;
+  position: absolute;
+  top: 89%;
+  left: 54%;
+  font-weight: 600;
+  font-family: 'Montserrat';
+
+  margin-top: -185px;
+  margin-left: -160px;
+}
+
+@media screen and (max-width: 641px) {
+  .loader {
+    width: 110px;
+    height: 120px;
+    margin-left: -55px;
+    margin-top: -60px;
+  }
+
+  .loadtxt {
+    top: 80%;
+    left: 65%;
+    font-size: 25px;
+  }
+}
 
 .animation {
   animation-duration: 1.5s;
@@ -1194,19 +1221,6 @@ figure {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
-}
-
-.loadtxt {
-  color: rgba(187, 0, 0, 0.925);
-  font-size: 35px;
-  position: absolute;
-  top: 89%;
-  left: 54%;
-  font-weight: 600;
-  font-family: 'Montserrat';
-
-  margin-top: -185px;
-  margin-left: -160px;
 }
 
 .lang1 {
@@ -1278,8 +1292,22 @@ figure {
 .buy__button {
   font-size: 30px;
   font-weight: 500;
+  text-align: center;
+  display: block;
+}
+.buy__button:hover {
+  color: #e93315;
 }
 
+.buy__button:first-of-type {
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 639px) {
+  .buy__button {
+    font-size: 22px;
+  }
+}
 .sidebar-menu {
   background-color: #fff;
   z-index: 999;
@@ -1547,4 +1575,15 @@ figure {
   position: absolute;
   top: 15px;
   left: 20px;
+}
+
+.obj1 {
+  object-position: left 20%;
+}
+
+.obj2 {
+  object-position: left center;
+}
+.obj3 {
+  object-position: right center;
 }
