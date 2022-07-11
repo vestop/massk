@@ -3,8 +3,8 @@ $('.story-slideshow').slick({
   arrows: false,
   infinite: true,
   pauseOnHover: false,
-  pauseOnFocus: true,
-  pauseOnDotsHover: true,
+  pauseOnFocus: false,
+  pauseOnDotsHover: false,
   speed: 1500,
   fade: true,
   autoplay: true,
@@ -20,11 +20,26 @@ $('.story-slideshow').slick({
   ],
 });
 
+$('.TestimonalList').slick({
+  vertical: true,
+  verticalSwiping: true,
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  arrows: false,
+  autoplay: true,
+  infinite: true,
+
+  pauseOnHover: false,
+  pauseOnFocus: false,
+  pauseOnDotsHover: false,
+  speed: 2500,
+});
+
 $('.product-list').slick({
   dots: false,
   infinite: false,
   autoplay: true,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 2500,
   speed: 300,
   arrows: false,
   slidesToShow: 4,
@@ -78,9 +93,9 @@ $('.Product__GallerySlideshow').slick({
   dots: false,
   infinite: true,
   slidesToShow: 1,
-  autoplaySpeed: 3000,
+
   speed: 500,
-  autoplay: true,
+  autoplay: false,
   nextArrow: '<button type="button" class="slick-next"></button>',
   prevArrow: '<button type="button" class="slick-prev"></button>',
 });
@@ -90,4 +105,29 @@ window.addEventListener('load', () => {
   setTimeout(function () {
     preload.classList.add('fGhjj');
   }, 1000);
+});
+
+$('.Products').slick({
+  vertical: true,
+  swipe: false,
+  speed: 0,
+
+  cssEase: 'linear',
+  dots: false,
+  slidesToShow: 1,
+
+  slidesToScroll: 1,
+  autoplay: false,
+  arrows: false,
+  asNavFor: '.Options',
+});
+
+$('.Options').slick({
+  dots: false,
+  slidesToShow: 9,
+  slidesToScroll: 1,
+  autoplay: false,
+  arrows: false,
+  asNavFor: '.Products',
+  focusOnSelect: true,
 });
