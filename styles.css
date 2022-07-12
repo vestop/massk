@@ -649,10 +649,6 @@ figure {
   font-size: 0;
 }
 
-.Product__List.Grid {
-  padding: 0 50px;
-  margin-left: -60px;
-}
 .Grid__Cell {
   box-sizing: border-box;
   display: inline-block;
@@ -660,8 +656,12 @@ figure {
   margin: 0;
   vertical-align: top;
   font-size: 1rem;
+  margin-bottom: 35px;
 }
 
+.ProductList .Grid__Cell {
+  padding: 0 0 0 24px;
+}
 @media screen and (min-width: 400px) {
   .product.Grid__Cell {
     width: 50%;
@@ -1250,7 +1250,7 @@ figure {
   text-align: left;
   display: block;
   position: relative;
-  padding-left: 22px;
+  padding-left: 30px;
 }
 
 .buy__button::before {
@@ -1263,6 +1263,13 @@ figure {
   background-repeat: no-repeat;
   background-size: cover;
   height: 20px;
+}
+
+.buy__wp::before {
+  background-image: url(images/wp.svg);
+}
+.buy_m::before {
+  background-image: url(images/mail.svg);
 }
 
 .buy__button:hover {
