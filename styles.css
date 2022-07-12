@@ -50,7 +50,7 @@ img {
 
 body {
   margin: 0;
-  font-family: Nunito Sans, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #1c1b1b;
   font-weight: 400;
   line-height: 1.65;
@@ -495,8 +495,11 @@ figure {
   max-width: 530px;
   margin: 24px 0;
 }
+
 .ImageHero {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -520,7 +523,6 @@ figure {
 }
 
 .ImageHero__Image {
-  height: 100%;
   background-image: url(images/Massk/i9.JPG);
   background-size: cover;
   background-position: center;
@@ -543,20 +545,7 @@ figure {
 }
 
 .ImageHero-bg-2 {
-  background-image: url(images/Massk/123.webp);
-  background-position: top center;
-}
-
-@media screen and (min-width: 1240px) {
-  .ImageHero-2 {
-    min-height: 500px;
-  }
-}
-
-@media screen and (min-width: 641px) {
-  .ImageHero-2 {
-    min-height: 450px;
-  }
+  background-image: url(images/Massk/2.jpg);
 }
 
 .ImageHero:hover .ImageHero-bg {
@@ -668,7 +657,6 @@ figure {
   box-sizing: border-box;
   display: inline-block;
   width: 100%;
-  padding: 0 0 0 24px;
   margin: 0;
   vertical-align: top;
   font-size: 1rem;
@@ -732,12 +720,13 @@ figure {
   width: max-content;
   opacity: 0;
   top: 100%;
-  left: -45px;
+  left: -10px;
   padding: 5px 0;
   text-align: left;
   background: white;
   border: 1px solid #dddddd;
   transition: all 0.3s linear;
+  z-index: 3;
 }
 .DropdownMenu::before {
   content: '';
@@ -790,7 +779,7 @@ figure {
 
 @media screen and (min-width: 641px) {
   .Product {
-    margin-bottom: 80px;
+    margin-bottom: 100px;
   }
 }
 
@@ -989,52 +978,6 @@ figure {
   padding-bottom: 18px;
 }
 
-.ftr {
-  margin-bottom: 80px;
-}
-
-.iwt_lr.first {
-  padding-top: 50px;
-  padding-bottom: 0;
-}
-.iwt_lr.last {
-  padding-top: 0px;
-  padding-bottom: 50px;
-}
-
-.iwt_lr .Grid__Cell {
-  padding: 0;
-}
-.iwt_lr .iwt_lr_text {
-  padding: 75px;
-}
-
-.iwt_lr .iwt_lr_text .SectionHeader__Heading {
-  font-weight: 600;
-  margin-bottom: 30px;
-  color: #000;
-}
-.SectionHeader__Heading.SectionHeader__Heading,
-.SectionHeader__SubHeading.SectionHeader__SubHeading {
-  margin-top: -0.325em;
-}
-.iwt_lr .iwt_lr_text .SectionHeader__Description {
-  font-size: 18px;
-}
-@media screen and (min-width: 1008px) {
-  .SectionHeader__Description {
-    margin-top: 24px;
-    margin-bottom: 24px;
-  }
-}
-.SectionHeader__Description {
-  max-width: 530px;
-}
-
-.iwt_lr .iwt_lr_text p {
-  margin-bottom: 1.6em;
-}
-
 .PageContent {
   max-width: 1000px;
   margin: 35px auto;
@@ -1185,7 +1128,6 @@ figure {
   color: #e31e24;
   font-size: 35px;
   font-weight: 600;
-  font-family: 'Montserrat';
   position: absolute;
   bottom: 22%;
   left: 50%;
@@ -1468,7 +1410,6 @@ figure {
   font-size: 12px;
   text-align: center;
   letter-spacing: 0.1em;
-  font-family: Montserrat, sans-serif;
   font-weight: 500;
   font-style: normal;
   background-color: transparent;
@@ -1630,7 +1571,7 @@ figure {
 }
 .Product__Opt {
   margin-top: 15px;
-  width: 300px;
+  width: 320px;
 }
 .Option {
   cursor: pointer;
@@ -1701,4 +1642,62 @@ nav.breadcrumb span:last-of-type {
 
 .slick-current .Option {
   border: 1px solid black;
+}
+
+@media screen and (min-width: 1008px) {
+  .\31\/2--lap-and-up,
+  .\32\/4--lap-and-up,
+  .\36\/12--lap-and-up {
+    width: 50%;
+  }
+}
+
+.iwt_lr .Grid {
+  margin: 0;
+}
+
+.ftr {
+  margin-bottom: 160px;
+}
+
+.iwt_lr.first {
+  padding-top: 50px;
+  padding-bottom: 0;
+}
+.iwt_lr.last {
+  padding-top: 0px;
+  padding-bottom: 50px;
+}
+
+.iwt_lr .iwt_lr_text {
+  padding: 75px;
+}
+
+@media screen and (max-width: 1008px) {
+  .iwt_lr .iwt_lr_text {
+    padding: 45px 0;
+  }
+  .SectionHeader__Description {
+    max-width: 100%;
+  }
+
+  .section__header {
+    margin-bottom: 40px;
+  }
+}
+.iwt_lr .iwt_lr_text .SectionHeader__Heading {
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #000;
+}
+.SectionHeader__Heading.SectionHeader__Heading,
+.SectionHeader__SubHeading.SectionHeader__SubHeading {
+  margin-top: -0.325em;
+}
+.iwt_lr .iwt_lr_text .SectionHeader__Description {
+  font-size: 18px;
+}
+
+.iwt_lr .iwt_lr_text p {
+  margin-bottom: 1.6em;
 }

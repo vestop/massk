@@ -9,12 +9,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Nunito+Sans:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="slick.css">
+  <!-- <link rel="stylesheet" href="theme.css"> -->
   <script src="jquery.min.js"></script>
   <script src="slick.js"></script>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="theme.css">
-
   <title>MASSK | SADDLES</title>
 </head>
 
@@ -28,21 +27,6 @@
     <div class="side-container">
       <nav class="sidebar-nav">
         <ul class="sidebar-list">
-          <li class="sidebar-item">
-            <a href="about.html" class="header__link">
-              MASSK's Story
-            </a>
-          </li>
-          <li class="sidebar-item">
-            <a href="manufacturing.html" class="header__link">
-              Manufacturing
-            </a>
-          </li>
-          <li class="sidebar-item">
-            <a href="ourph.html" class="header__link">
-              Our Philosophy
-            </a>
-          </li>
           <li class="sidebar-item">
             <a href="saddles.html" class="header__link">
               Saddles
@@ -61,6 +45,27 @@
           <li class="sidebar-item">
             <a href="stirups.html" class="header__link">
               Stirrups
+            </a>
+          </li>
+          <hr>
+          <li class="sidebar-item">
+            <a href="about.html" class="header__link">
+              MASSK's Story
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="manufacturing.html" class="header__link">
+              Manufacturing
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="ourph.html" class="header__link">
+              Our Philosophy
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="ourph.html" class="header__link">
+              Contacts
             </a>
           </li>
         </ul>
@@ -122,30 +127,16 @@
       <div class="header__item fill">
         <nav class="header__SecondaryNav">
           <ul class="HorizontalList">
-
-
-            <li class="HorizontalList__Item menu" id="menu">
-              <a href="#" class="header__link">
-                English
-                <i class="icon icon-down">
-                  <svg viewBox="0 0 129 129" width="10" height="10">
-                    <g>
-                      <path d="m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z"></path>
-                    </g>
-                  </svg>
-                </i>
+            <li class="HorizontalList__Item">
+              <a href="contact.html" class="header__link">
+                Contact Us
+                <span class="header__linkSpacer">
+                  Contacts Us
+                </span>
               </a>
-              <div id="DropdownMenu" class="DropdownMenu">
-                <ul class="LinkList">
-                  <li class="LinkList__Item">
-                    <a href="about.html" class="Link Link--sec">TURKISH</a>
-                  </li>
-                  <li class="LinkList__Item">
-                    <a href="#" class="Link Link--sec">ARABIC</a>
-                  </li>
-                </ul>
-              </div>
             </li>
+
+
             <li class="HorizontalList__Item menu" id="menu1">
               <a href="#" class="header__link">
                 About MASSK
@@ -172,19 +163,30 @@
               </div>
             </li>
 
-            <li class="HorizontalList__Item">
-              <a href="contact.html" class="header__link">
-                Contacts
-                <span class="header__linkSpacer">
-                  Contacts
-                </span>
+            <li class="HorizontalList__Item menu" id="menu">
+              <a href="#" class="header__link">
+                <img class="ic2" src="images/lang.svg" alt="">
+                EN
               </a>
+              <div id="DropdownMenu" class="DropdownMenu">
+                <ul class="LinkList">
+                  <li class="LinkList__Item">
+                    <a href="about.html" class="Link Link--sec">TR</a>
+                  </li>
+                  <li class="LinkList__Item">
+                    <a href="#" class="Link Link--sec">AR</a>
+                  </li>
+                </ul>
+              </div>
             </li>
+
+
           </ul>
         </nav>
       </div>
     </div>
   </div>
+
   <div class="collection-section">
     <header class="section__header center PageHeader">
       <div class="container">
@@ -195,158 +197,7 @@
       <div class="ProductList__Wrapper Grid">
 
 
-        <div class="product Grid__Cell">
-          <div class="product-wrapper">
-            <a href="#" class="product-img-wrapper">
-              <img class="product-img" src="images/girt1.png" alt="">
-            </a>
-            <div class="product-info center">
-              <div class="product-header">
-                <h2 class="product-title heading u-h1">
-                  <a href="#" class="product-link">Test 1</a>
-                </h2>
 
-              </div>
-              <div class="product-type">Saddle</div>
-              <div class="product-price-list heading u-h1">
-                <span class="product-price price">$180,50</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="product Grid__Cell">
-          <div class="product-wrapper">
-            <a href="#" class="product-img-wrapper">
-              <img class="product-img" src="images/girt2.png" alt="">
-            </a>
-            <div class="product-info center">
-              <div class="product-header">
-                <h2 class="product-title heading u-h1">
-                  <a href="#" class="product-link">Test 1</a>
-                </h2>
-
-              </div>
-              <div class="product-type">Saddle</div>
-              <div class="product-price-list heading u-h1">
-                <span class="product-price price">$180,50</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="product Grid__Cell">
-          <div class="product-wrapper">
-            <a href="#" class="product-img-wrapper">
-              <img class="product-img" src="images/girt3.png" alt="">
-            </a>
-            <div class="product-info center">
-              <div class="product-header">
-                <h2 class="product-title heading u-h1">
-                  <a href="#" class="product-link">Test 1</a>
-                </h2>
-
-              </div>
-              <div class="product-type">Saddle</div>
-              <div class="product-price-list heading u-h1">
-                <span class="product-price price">$180,50</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="product Grid__Cell">
-          <div class="product-wrapper">
-            <a href="#" class="product-img-wrapper">
-              <img class="product-img" src="images/girt4.png" alt="">
-            </a>
-            <div class="product-info center">
-              <div class="product-header">
-                <h2 class="product-title heading u-h1">
-                  <a href="#" class="product-link">Test 1</a>
-                </h2>
-
-              </div>
-              <div class="product-type">Saddle</div>
-              <div class="product-price-list heading u-h1">
-                <span class="product-price price">$180,50</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="product Grid__Cell">
-          <div class="product-wrapper">
-            <a href="#" class="product-img-wrapper">
-              <img class="product-img" src="images/girt5.png" alt="">
-            </a>
-            <div class="product-info center">
-              <div class="product-header">
-                <h2 class="product-title heading u-h1">
-                  <a href="#" class="product-link">Test 1</a>
-                </h2>
-
-              </div>
-              <div class="product-type">Saddle</div>
-              <div class="product-price-list heading u-h1">
-                <span class="product-price price">$180,50</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="product Grid__Cell">
-          <div class="product-wrapper">
-            <a href="#" class="product-img-wrapper">
-              <img class="product-img" src="images/girt6.png" alt="">
-            </a>
-            <div class="product-info center">
-              <div class="product-header">
-                <h2 class="product-title heading u-h1">
-                  <a href="#" class="product-link">Test 1</a>
-                </h2>
-
-              </div>
-              <div class="product-type">Saddle</div>
-              <div class="product-price-list heading u-h1">
-                <span class="product-price price">$180,50</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="product Grid__Cell">
-          <div class="product-wrapper">
-            <a href="#" class="product-img-wrapper">
-              <img class="product-img" src="images/girt7.png" alt="">
-            </a>
-            <div class="product-info center">
-              <div class="product-header">
-                <h2 class="product-title heading u-h1">
-                  <a href="#" class="product-link">Test 1</a>
-                </h2>
-
-              </div>
-              <div class="product-type">Saddle</div>
-              <div class="product-price-list heading u-h1">
-                <span class="product-price price">$180,50</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="product Grid__Cell">
-          <div class="product-wrapper">
-            <a href="#" class="product-img-wrapper">
-              <img class="product-img" src="images/girt8.png" alt="">
-            </a>
-            <div class="product-info center">
-              <div class="product-header">
-                <h2 class="product-title heading u-h1">
-                  <a href="#" class="product-link">Test 1</a>
-                </h2>
-
-              </div>
-              <div class="product-type">Saddle</div>
-              <div class="product-price-list heading u-h1">
-                <span class="product-price price">$180,50</span>
-              </div>
-            </div>
-          </div>
-        </div>
         <div class="product Grid__Cell">
           <div class="product-wrapper">
             <a href="#" class="product-img-wrapper">
@@ -355,13 +206,13 @@
             <div class="product-info center">
               <div class="product-header">
                 <h2 class="product-title heading u-h1">
-                  <a href="#" class="product-link">Test 1</a>
+                  <a href="#" class="product-link">MASSK GIRTH</a>
                 </h2>
 
               </div>
-              <div class="product-type">Saddle</div>
+              <div class="product-type">Girth</div>
               <div class="product-price-list heading u-h1">
-                <span class="product-price price">$180,50</span>
+                <span class="product-price price">£150,00</span>
               </div>
             </div>
           </div>

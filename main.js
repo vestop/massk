@@ -23,11 +23,12 @@ $('.story-slideshow').slick({
 $('.TestimonalList').slick({
   vertical: true,
   verticalSwiping: true,
-  slidesToShow: 2,
+  slidesToShow: 1,
   slidesToScroll: 1,
   arrows: false,
   autoplay: true,
   infinite: true,
+  swipe: false,
 
   pauseOnHover: false,
   pauseOnFocus: false,
@@ -37,11 +38,11 @@ $('.TestimonalList').slick({
 
 $('.product-list').slick({
   dots: false,
-  infinite: false,
   autoplay: true,
-  autoplaySpeed: 2500,
-  speed: 300,
+  autoplaySpeed: 3000,
+  speed: 500,
   arrows: false,
+  infinite: true,
   slidesToShow: 4,
   slidesToScroll: 4,
   responsive: [
@@ -50,7 +51,7 @@ $('.product-list').slick({
       settings: {
         slidesToShow: 3,
         slidesToScroll: 3,
-        infinite: true,
+        centerMode: true,
       },
     },
     {
@@ -58,6 +59,7 @@ $('.product-list').slick({
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2,
+        centerMode: true,
       },
     },
     {
@@ -65,6 +67,7 @@ $('.product-list').slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
+        centerMode: true,
       },
     },
   ],
