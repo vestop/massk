@@ -656,7 +656,6 @@ figure {
   margin: 0;
   vertical-align: top;
   font-size: 1rem;
-  margin-bottom: 35px;
 }
 
 .ProductList .Grid__Cell {
@@ -1707,4 +1706,21 @@ nav.breadcrumb span:last-of-type {
 
 .iwt_lr .iwt_lr_text p {
   margin-bottom: 1.6em;
+}
+
+.Form__FloatingLabel {
+  position: absolute;
+  bottom: calc(100% - 8px);
+  left: 10px;
+  padding: 0 5px;
+  line-height: normal;
+  color: #6a6a6a;
+  font-size: 12px;
+  opacity: 0;
+  background: rgba(255, 255, 255, 0);
+  pointer-events: none;
+  -webkit-transform: translateY(3px);
+  transform: translateY(3px);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
